@@ -69,6 +69,9 @@
 6. push（branch + tag）
 7. GitHub Release 作成
 
+詳細な実行手順は `docs/release_workflow.md` を参照する。
+リリースノートは `docs/templates/release_notes_template.md` を使用する。
+
 ## 7. 破壊的変更（Breaking Change）手順
 1. `workspace-meta` に影響範囲を先に記載
 2. SDK/Engine の移行ガイドを同時リリース

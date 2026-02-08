@@ -14,6 +14,8 @@
 - `docs/master_roadmap.md` : 全リポ横断ロードマップ
 - `docs/repository_contracts.md` : リポ責務/依存/契約定義
 - `docs/release_policy.md` : バージョニング/互換/リリース規約
+- `docs/release_workflow.md` : リリース実行手順（順序/タグ/作業手順）
+- `docs/templates/release_notes_template.md` : 共通リリースノート雛形
 
 ## 依存方向
 `strategy-pack` -> `trading-sdk`
