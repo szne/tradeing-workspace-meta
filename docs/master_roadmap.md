@@ -28,9 +28,9 @@
 目的: マルチリポ運用の安定化
 
 ### M2.1 SDK Compatibility Policy
-- [ ] semver ルール確定（MAJOR/MINOR/PATCH）
-- [ ] 破壊的変更時の移行手順テンプレート
-- [ ] Engine の対応SDK範囲（例: `>=0.1,<0.2`）明記
+- [x] semver ルール確定（MAJOR/MINOR/PATCH）
+- [x] 破壊的変更時の移行手順テンプレート
+- [x] Engine の対応SDK範囲（例: `>=0.1,<0.2`）明記
 
 ### M2.2 Cross-Repo CI Baseline
 - [ ] Engine CI: `pytest` + class/entrypoint スモーク
@@ -96,3 +96,4 @@
 
 ## 5. 更新履歴
 - 2026-02-08: 初版作成（M0/M1完了、M2開始）
+- 2026-02-08: M2.1 完了（SDK互換ポリシー、移行テンプレ、SDK対応範囲）
