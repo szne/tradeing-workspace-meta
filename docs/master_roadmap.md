@@ -33,10 +33,10 @@
 - [x] Engine の対応SDK範囲（例: `>=0.1,<0.2`）明記
 
 ### M2.2 Cross-Repo CI Baseline
-- [ ] Engine CI: `pytest` + class/entrypoint スモーク
-- [ ] SDK CI: lint + 契約互換チェック
-- [ ] Pack CI: `strategy validate` + `pytest`
-- [ ] CLI CI: unit test + basic command smoke
+- [x] Engine CI: `pytest` + class/entrypoint スモーク
+- [x] SDK CI: lint + 契約互換チェック
+- [x] Pack CI: `strategy validate` + `pytest`
+- [x] CLI CI: unit test + basic command smoke
 
 ### M2.3 Release Workflow
 - [ ] タグ運用（`vX.Y.Z`）統一
@@ -97,3 +97,4 @@
 ## 5. 更新履歴
 - 2026-02-08: 初版作成（M0/M1完了、M2開始）
 - 2026-02-08: M2.1 完了（SDK互換ポリシー、移行テンプレ、SDK対応範囲）
+- 2026-02-08: M2.2 完了（4リポにGitHub Actions CI基盤を導入）
