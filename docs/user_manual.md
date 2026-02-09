@@ -62,7 +62,7 @@ strategy test --path .
 ```sh
 cd /Users/szkk/works/TradeingSystem/strategy-pack
 source ../trading-engine/.venv/bin/activate
-strategy backtest --engine-root ../trading-engine --config configs/strategy_pack_entrypoint.yaml --source synthetic --rows 500
+strategy backtest --engine-root ../trading-engine --config configs/default.yaml --strategy strategy_pack.strategies.my_strategy:MyStrategy --source synthetic --rows 500
 ```
 
 または Engine 側で直接実行:
@@ -70,7 +70,7 @@ strategy backtest --engine-root ../trading-engine --config configs/strategy_pack
 ```sh
 cd /Users/szkk/works/TradeingSystem/trading-engine
 source .venv/bin/activate
-python -m runners.backtest_runner configs/strategy_pack_entrypoint.yaml --source synthetic --rows 500
+python -m runners.backtest_runner configs/default.yaml --strategy strategy_pack.strategies.my_strategy:MyStrategy --source synthetic --rows 500
 ```
 
 ## 4.4 ライブ試験を最小構成で実行する
