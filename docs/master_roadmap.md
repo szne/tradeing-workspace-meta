@@ -52,7 +52,7 @@
 目的: 実運用に向けた検証能力・性能の底上げ
 
 ### M3.1 Validation
-- [ ] Walk-Forward Analysis
+- [x] Walk-Forward Analysis
 - [ ] パラメータ最適化（GA/Grid Search）
 - [x] Trainer向け `run_backtest()` API
 
@@ -100,3 +100,4 @@
 - 2026-02-08: M2.2 完了（4リポにGitHub Actions CI基盤を導入）
 - 2026-02-08: M2.3 完了（タグ規約・リリースノート雛形・リリース順序を固定）
 - 2026-02-09: M3.1の `run_backtest()` API を実装
+- 2026-02-09: M3.1の Walk-Forward Analysis API を実装
