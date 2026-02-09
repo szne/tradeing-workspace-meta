@@ -141,6 +141,7 @@ python scripts/fetch_sample_data.py --source synthetic --symbol BTC/USDT --timef
 2. `workspace-meta/docs/master_roadmap.md`
 3. `workspace-meta/docs/repository_contracts.md`
 4. 各リポの README / docs
+5. エージェント運用は `workspace-meta/docs/coding_agent_manual.md`
 
 ## 8. よくある詰まりポイント
 

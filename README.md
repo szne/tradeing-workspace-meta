@@ -10,6 +10,7 @@
 
 ## 共通ドキュメント
 - `docs/user_manual.md` : 利用者向けマニュアル（全体像と日常フロー）
+- `docs/coding_agent_manual.md` : コーディングエージェント運用マニュアル
 - `docs/workspace_guide.md` : 全リポ共通の運用ルール
 - `docs/project_charter.md` : 全体方針・設計原則・ガバナンス
 - `docs/master_roadmap.md` : 全リポ横断ロードマップ
