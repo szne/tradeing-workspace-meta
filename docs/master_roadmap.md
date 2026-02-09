@@ -57,9 +57,9 @@
 - [x] Trainer向け `run_backtest()` API
 
 ### M3.2 Data/Perf
-- [ ] Parquet/Arrow 対応
-- [ ] ベクトル化/Numba
-- [ ] 並列評価（銘柄/期間/候補）
+- [x] Parquet/Arrow 対応
+- [x] ベクトル化/Numba
+- [x] 並列評価（銘柄/期間/候補）
 
 ### 完了条件
 - 検証ループが自動化され、再現実験が可能
@@ -102,3 +102,4 @@
 - 2026-02-09: M3.1の `run_backtest()` API を実装
 - 2026-02-09: M3.1の Walk-Forward Analysis API を実装
 - 2026-02-09: M3.1の パラメータ最適化（GA/Grid Search）API を実装
+- 2026-02-09: M3.2の Data/Perf（Parquet/Arrow・Numba・並列評価）を実装
