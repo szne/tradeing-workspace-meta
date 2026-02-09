@@ -24,7 +24,7 @@
 - class/entrypoint 両方で外部 Strategy 起動確認済み
 - 各リポが独立 GitHub リポとして管理されている
 
-## M2: Multi-Repo Hardening (進行中)
+## M2: Multi-Repo Hardening
 目的: マルチリポ運用の安定化
 
 ### M2.1 SDK Compatibility Policy
