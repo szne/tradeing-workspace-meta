@@ -53,7 +53,7 @@
 
 ### M3.1 Validation
 - [x] Walk-Forward Analysis
-- [ ] パラメータ最適化（GA/Grid Search）
+- [x] パラメータ最適化（GA/Grid Search）
 - [x] Trainer向け `run_backtest()` API
 
 ### M3.2 Data/Perf
@@ -101,3 +101,4 @@
 - 2026-02-08: M2.3 完了（タグ規約・リリースノート雛形・リリース順序を固定）
 - 2026-02-09: M3.1の `run_backtest()` API を実装
 - 2026-02-09: M3.1の Walk-Forward Analysis API を実装
+- 2026-02-09: M3.1の パラメータ最適化（GA/Grid Search）API を実装
