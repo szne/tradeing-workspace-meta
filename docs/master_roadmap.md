@@ -74,8 +74,8 @@
 - [x] API制限/接続断の運用設計
 
 ### M4.2 Governance
-- [ ] 変更管理（breaking change承認フロー）
-- [ ] ロールバック手順
+- [x] 変更管理（breaking change承認フロー）
+- [x] ロールバック手順
 
 ### 完了条件
 - 運用チェックリストで定常運用可能判定
@@ -105,3 +105,4 @@
 - 2026-02-09: M3.2の Data/Perf（Parquet/Arrow・Numba・並列評価）を実装
 - 2026-02-09: B2の LLM reasoning 拡張を実装
 - 2026-02-09: M4.1の Operations（リカバリ手順・最小監視通知・API制限設計）を実装
+- 2026-02-09: M4.2の Governance（breaking change承認フロー・rollback手順）を実装

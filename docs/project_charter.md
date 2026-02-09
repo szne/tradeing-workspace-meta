@@ -29,12 +29,15 @@ TradeingSystem を「戦略開発と実行基盤を分離したマルチリポ�
 1. `workspace-meta/docs/project_charter.md`（本書）
 2. `workspace-meta/docs/master_roadmap.md`
 3. `workspace-meta/docs/repository_contracts.md`
-4. 各リポの `README.md` / `docs/*`
+4. `workspace-meta/docs/change_management.md`
+5. `workspace-meta/docs/rollback_procedure.md`
+6. 各リポの `README.md` / `docs/*`
 
 ### 4.2 変更フロー
 1. 方針変更は `workspace-meta` を先に更新
-2. 影響リポを依存順で更新（SDK -> Engine -> Pack -> CLI）
-3. 各リポでテストを実行し、リポ単位でコミット
+2. breaking change は BCR 作成と2者承認を先に実施
+3. 影響リポを依存順で更新（SDK -> Engine -> Pack -> CLI）
+4. 各リポでテストを実行し、リポ単位でコミット
 
 ### 4.3 品質ゲート（最小）
 - Engine: `pytest` + class/entrypointの疎通確認
@@ -57,8 +60,10 @@ TradeingSystem を「戦略開発と実行基盤を分離したマルチリポ�
 
 ## 7. リスクと対策
 - **リスク:** SDK変更による破壊的影響
-  - **対策:** semver厳守 + 互換期間を定義
+  - **対策:** semver厳守 + BCR承認 + 互換期間を定義
 - **リスク:** リポ間ドキュメント乖離
   - **対策:** workspace-meta を先に更新するルール
 - **リスク:** Strategy品質のばらつき
   - **対策:** strategy-cli validate を必須化
+- **リスク:** リリース後の障害拡大
+  - **対策:** rollback procedure と report を標準運用化

@@ -7,7 +7,8 @@
 ## 共通ルール
 - 変更はリポ単位でコミットする。
 - 依存順で更新する（SDK -> Engine -> Strategy Pack -> CLI）。
-- 破壊的変更はSDK側で先に宣言し、移行手順を同時に記載する。
+- 破壊的変更は `docs/change_management.md` の承認フローに従う。
+- 障害時は `docs/rollback_procedure.md` を起点にロールバックする。
 - リリース時は `docs/release_workflow.md` に従い、`vX.Y.Z` タグのみを使う。
 
 ## 連携確認の最小手順

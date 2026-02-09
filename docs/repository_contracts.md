@@ -81,11 +81,17 @@
 - ドキュメント更新漏れがないか
 - 移行手順が利用者視点で再現可能か
 
+## 5.4 Breaking Change 承認責任
+- breaking change は `workspace-meta/docs/change_management.md` のBCRを必須とする
+- 承認者は「変更対象リポMaintainer + 影響リポMaintainer」の2者を最低要件とする
+- 承認前に実装マージしてはいけない
+
 ## 6. 受け入れ基準（Definition of Done）
 - 影響する全リポで CI が緑
 - `workspace-meta/docs/release_policy.md` と矛盾しない
 - Engine で class/entrypoint 両方式のスモークが通る
 - Strategy Pack で `validate` と最小 `test` が通る
+- breaking change の場合、BCR と rollback plan/report の記録が存在する
 
 ## 7. 更新ルール
 - 契約追加/変更時は本書を同一PRで更新する
@@ -93,3 +99,4 @@
 
 ## 8. 更新履歴
 - 2026-02-08: 初版作成
+- 2026-02-09: M4.2対応（breaking change承認責任とrollback記録要件を追加）

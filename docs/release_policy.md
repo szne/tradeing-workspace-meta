@@ -73,10 +73,12 @@
 リリースノートは `docs/templates/release_notes_template.md` を使用する。
 
 ## 7. 破壊的変更（Breaking Change）手順
-1. `workspace-meta` に影響範囲を先に記載
-2. SDK/Engine の移行ガイドを同時リリース
-3. 少なくとも1リリースは旧方式への注意喚起を残す
-4. ロールバック手順を事前定義
+1. `docs/change_management.md` に従い BCR を作成する
+2. `workspace-meta` に影響範囲を先に記載する
+3. SDK/Engine の移行ガイドを同時リリースする
+4. 少なくとも1リリースは旧方式への注意喚起を残す
+5. `docs/rollback_procedure.md` 準拠のロールバック計画を事前定義する
+6. 対象リポMaintainer + 影響リポMaintainer の2者承認を取得する
 
 ## 8. 互換マトリクス（初期方針）
 
@@ -93,5 +95,12 @@
 
 ただし 48時間以内に正式な記録を `workspace-meta` に反映する。
 
-## 10. 更新履歴
+## 10. 関連ドキュメント
+- `docs/change_management.md`
+- `docs/rollback_procedure.md`
+- `docs/templates/breaking_change_request.md`
+- `docs/templates/rollback_report.md`
+
+## 11. 更新履歴
 - 2026-02-08: 初版作成
+- 2026-02-09: M4.2対応（breaking change承認フローとrollback手順を統合）
