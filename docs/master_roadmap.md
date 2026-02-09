@@ -54,7 +54,7 @@
 ### M3.1 Validation
 - [ ] Walk-Forward Analysis
 - [ ] パラメータ最適化（GA/Grid Search）
-- [ ] Trainer向け `run_backtest()` API
+- [x] Trainer向け `run_backtest()` API
 
 ### M3.2 Data/Perf
 - [ ] Parquet/Arrow 対応
@@ -99,3 +99,4 @@
 - 2026-02-08: M2.1 完了（SDK互換ポリシー、移行テンプレ、SDK対応範囲）
 - 2026-02-08: M2.2 完了（4リポにGitHub Actions CI基盤を導入）
 - 2026-02-08: M2.3 完了（タグ規約・リリースノート雛形・リリース順序を固定）
+- 2026-02-09: M3.1の `run_backtest()` API を実装
