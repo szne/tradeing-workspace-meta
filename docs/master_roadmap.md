@@ -103,3 +103,4 @@
 - 2026-02-09: M3.1の Walk-Forward Analysis API を実装
 - 2026-02-09: M3.1の パラメータ最適化（GA/Grid Search）API を実装
 - 2026-02-09: M3.2の Data/Perf（Parquet/Arrow・Numba・並列評価）を実装
+- 2026-02-09: B2の LLM reasoning 拡張を実装
