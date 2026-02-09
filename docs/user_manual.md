@@ -85,10 +85,25 @@ python -m runners.live_runner configs/default.yaml --once
 
 ## 5. データ管理の考え方
 
-- データ管理の責務は Engine 側（`trading-engine/data/`）
+- データ管理の責務は Engine 側（実体は `trading-data/engine-cache/` を推奨）
 - 原則: データは Git にコミットしない
 - 対応ソース: `auto/local_csv/local_parquet/http_csv/synthetic`
 - キャッシュ命名は `docs/data_sources.md` の規約に従う
+- 保存先は `TRADING_ENGINE_DATA_PATH` で切り替える（最優先）
+
+推奨設定（ローカル運用）:
+
+```sh
+export TRADING_ENGINE_DATA_PATH="/Users/szkk/works/TradeingSystem/trading-data/engine-cache"
+```
+
+保存先確認:
+
+```sh
+cd /Users/szkk/works/TradeingSystem/trading-engine
+source .venv/bin/activate
+python -c "from core.data_loader import DataLoader; print(DataLoader({'data': {'path': 'data'}}).data_path)"
+```
 
 Parquet生成例:
 
